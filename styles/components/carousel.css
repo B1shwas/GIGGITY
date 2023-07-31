@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.hero__carousel {
+  display: block;
+}
+.carousel {
+  margin: 2rem 0;
+  position: relative;
+  height: 550px;
+}
+
+.carousel__item {
+  height: 500px;
+  background: rgb(201, 191, 191);
+  color: var(--clr-dark);
+  display: none;
+}
+.carousel__item img {
+  height: 500px;
+  border: 5px solid white;
+}
+.carousel__item__inside {
+  display: flex;
+  gap: 10rem;
+}
+.carousel__item__text {
+  transform: translateY(5rem);
+  gap: 1rem;
+}
+.carousel__text__head{
+  gap: 0.5rem;
+}
+.carousel__item__text  h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: var(--size-6xl);
+  font-weight: 100;
+}
+.carousel__item__text  p {
+  font-size: var(--size-base);
+  font-weight: 300;
+  color: gray;
+}
+.carousel__item__text .horizontal__bar {
+  border: 1px solid gray;
+}
+.carousel__item__text  span {
+  font-family: "Bodoni Moda", serif;
+  font-size: var(--size-2xl);
+  font-weight: 100;
+  color: rgb(63, 61, 61);
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: var(--clr-light);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Media Queries*/
+/* @media (min-width: 475px) {}*/
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+
+
+/* xl */
+@media (max-width: 1280px) {
+  .carousel {
+    height: 450px;
+  }
+
+  .carousel__item {
+    height: 400px;
+  }
+  .carousel__item img {
+    height: 400px;
+  }
+  .carousel__item__inside {
+    gap: 8rem;
+  }
+  .carousel__button {
+    width: 7px;
+    height: 7px;
+  }
+  .carousel__item__text  h3 {
+    font-size: var(--size-5xl);
+  }
+  .carousel__item__text  p {
+    font-size: var(--size-base);
+  }
+  .carousel__item__text .horizontal__bar {
+    border: 0.8px solid gray;
+  }
+  .carousel__item__text  span {
+    font-size: var(--size-xl);
+  }
+}
+/* lg */
+@media (max-width: 1024px) {
+  .carousel {
+    height: 420px;
+  }
+
+  .carousel__item {
+    height: 370px;
+  }
+  .carousel__item img {
+    height: 370px;
+    width: 70%;
+  }
+  .carousel__item__inside {
+    gap: 3rem;
+  }
+
+  .carousel__item__text  h3 {
+    font-size: var(--size-4xl);
+  }
+  .carousel__item__text  p {
+    font-size: var(--size-sm);
+  }
+  .carousel__item__text .horizontal__bar {
+    border: 0.8px solid gray;
+  }
+  .carousel__item__text  span {
+    font-size: var(--size-xl);
+  }
+  .carousel__item__text {
+    gap: 0.5rem;
+  }
+  .carousel__button {
+    width: 7px;
+    height: 7px;
+  }
+  .carousel__item__text .horizontal__bar {
+    width: 9rem;
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  .carousel {
+    height: 395px;
+  }
+
+  .carousel__item {
+    height: 350px;
+  }
+  .carousel__item img {
+    height: 350px;
+    width: 65%;
+  }
+
+  .carousel__item__text  h3 {
+    font-size: var(--size-3xl);
+  }
+  .carousel__item__text span {
+    font-size: var(--size-base);
+  }
+  .carousel__item__text .horizontal__bar {
+    width: 8rem;
+  }
+} 
+/* sm */
+@media (max-width: 640px) {
+  .carousel {
+    height: 490px;
+  }
+  .carousel__item__inside{
+    flex-direction: column;
+    gap: 0rem;
+    transform: translateY();
+  }
+
+  .carousel__item {
+    height: 445px;
+  }
+  .carousel__item img {
+    height: 330px;
+    width: 100%;
+  }
+
+  .carousel__item__text  h3 {
+    font-size: var(--size-2xl);
+  }
+  .carousel__item__text  span {
+    font-size: var(--size-base);
+  }
+  .carousel__item__text .horizontal__bar {
+    border: 1px solid gray;
+    width: 0.1rem;
+    height: 5.5rem;
+  }
+  .carousel__item__text{
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: -4.5rem;
+  }
+  .carousel__item__text  p {
+   transform: translatey(2rem);
+  }
+
+}
+

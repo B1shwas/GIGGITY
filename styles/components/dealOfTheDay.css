@@ -1,0 +1,83 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+.deal__day h3{
+    font-size: var(--size-3xl);
+    font-weight: 500;
+    text-transform: uppercase ;
+    letter-spacing: 0.3rem;
+}
+.deal__box1,.deal__box2,.deal__box3{
+    width: 20rem;
+    height: 25rem;
+    position: relative;
+    border-radius: 10px;
+}
+.deal__box1{
+    background-color: bisque;
+}
+.deal__box2{
+    background-color: rgb(145, 129, 100);
+}
+.deal__box3{
+    background-color: rgb(96, 96, 140);
+    /* background-color: rgb(60, 60, 87); */
+}
+.deal__allBox{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.deal__img{
+    height: 96%;
+    overflow: hidden;
+    position: absolute;
+    right: -4rem;
+    z-index: 2;
+    bottom: 0.5rem;
+}
+.deal__box2 .deal__img{
+    height: 90%;
+    position: absolute;
+    bottom: -0.2rem;
+    right: -3rem;
+    z-index: 2
+}
+.deal__box3 .deal__img{
+    height: 90%;
+    position: absolute;
+    bottom: 0.5rem;
+    right: -2rem;
+    z-index: 2;
+}
+.deal__content h4{
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.deal__content span{
+    color: black;
+    font-family: 'Roboto',sans-serif;
+
+}
+.deal__content{
+    position: absolute;
+    left: 2.5rem;
+    top: 7rem;
+}
+.deal__button .cart__svg{
+    fill: black;
+    transform: translateY(1px);
+}
+.deal__box2 .deal__content h4{
+    color: rgb(139, 58, 58);
+}
+.deal__box3 .deal__content h4{
+    color: rgb(254, 162, 162);
+}
+.deal__box1:hover .deal__img,.deal__box2:hover .deal__img,.deal__box3:hover .deal__img{
+    transform: scale(1.04);
+    transition: 1s;
+}
+
+

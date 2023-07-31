@@ -1,0 +1,83 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+/* Styling for Women's Wears */
+.women__wears__items{
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: 0;
+    height: 27rem;
+}
+
+.women__wears h3{
+    font-size: var(--size-3xl);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin: 2rem 0 0 0;
+}
+
+.women__wears__list{
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.women__wears__items {
+    overflow-x: hidden;
+}
+
+.women__wears__list::-webkit-scrollbar {
+    display: none;
+}
+
+.women_item {
+    min-width: 14rem;
+    max-width: 14rem;
+    height: 22.7rem;
+    background-color: gray;
+    margin: 1.5rem 0 0 0;
+    overflow: hidden;
+}
+
+.item__details {
+    background-color: var(--clr-light);
+    transform: translateY(-2rem);
+    gap: 3rem;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: space-between;
+}
+
+#womenImg {
+    height: 22rem;
+    width: 14rem;
+    transition: 3s ease;
+}
+
+#womenImg:hover{
+    transform: scale(1.1);
+    transition: transform 4s ease;
+}
+
+.item__details h4 {
+    color: black;
+    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
+}
+
+.item__details p {
+    color: rgb(76, 76, 76);
+    font-weight: 300;
+    font-size: 0.7rem;
+    transform: translateY(-0.2rem);
+}
+
+.item__details strike {
+    color: red;
+    font-size: 0.85rem;
+}
+
+.women__seeMore {
+    color: gray;
+}
